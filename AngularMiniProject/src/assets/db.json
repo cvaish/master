@@ -1,0 +1,48 @@
+{
+  "employee": [
+    {
+      "id": 2,
+      "ename": "shivani ingle",
+      "email": "priya@gmail.com",
+      "mobile": "4567886789",
+      "designation": "software ",
+      "username": "rr",
+      "password": "rr"
+    },
+    {
+      "id": 3,
+      "ename": "rutuja",
+      "email": "rutuja",
+      "mobile": "1234567",
+      "designation": "manager",
+      "username": "rr",
+      "password": "ee"
+    }
+  ],
+  "company": [
+    {
+      "id": 11,
+      "cname": "infosys",
+      "email": "info@gmail.com",
+      "mobile": "4567890",
+      "username": "dd",
+      "password": "dd"
+    },
+    {
+      "id": 12,
+      "cname": "Accenture",
+      "email": "info@gmail.com",
+      "mobile": "4567890",
+      "username": "aa",
+      "password": "aa"
+    },
+    {
+      "id": 13,
+      "cname": "HN marketing",
+      "email": "hn@gmail.com",
+      "mobile": "637892",
+      "username": "hh",
+      "password": "hh"
+    }
+  ]
+}

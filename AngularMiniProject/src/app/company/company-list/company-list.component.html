@@ -1,0 +1,38 @@
+<p>company-list works!</p>
+<div class="container jumbotron ">
+    <table class="table table-striped table-dark" border="1">
+        <tbody>
+            <tr class="bg-info"> 
+                <th> Id</th>
+                <th> Name</th>
+                <th> Email</th>
+                <th> Mobile</th>
+                <th> Uname</th>
+                <th> Password</th>
+                <th> Action</th>
+            </tr>
+        </tbody>
+            <tr *ngFor="let com1 of cc">
+                <td>{{com1.id}}</td>
+                <td>{{com1.cname}}</td>
+                <td>{{com1.email}}</td>
+                <td>{{com1.mobile}}</td>
+                <td>{{com1.username}}</td>
+                <td>{{com1.password}}</td>
+
+                <td><a [routerLink]="['company-details',com1.id]" >show details</a>
+              
+              <a class="btn" [routerLink]="['company-update']" [state]="com1">
+                        <i class="fa fa-edit" style="color: white;"></i>
+                    </a>
+                <a class="btn">
+            
+                        <i class="fa fa-trash " (click)="deletedata1(com1.id)"></i>
+                    </a>
+                </td>
+            </tr>
+       
+    </table>
+
+</div>
+<router-outlet></router-outlet>

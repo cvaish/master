@@ -1,0 +1,76 @@
+<p>employee-list works!</p>
+
+<!-- <div class="container">
+    <table class="table table-striped">
+      <tbody >
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile</th>
+          <th>Designation</th>
+           <th>Username</th>
+           <th>Password</th>
+      </tr>
+        <tr *ngFor="let e  of em">
+          <td>{{e.id}}</td>
+          <td>{{e.ename}}</td>
+          <td>{{e.email}}</td>
+          <td>{{e.mobile}}</td>
+          <td>{{e.designation}}</td>
+          <td>{{e.username}}</td>
+          <td>{{e.password}}</td>
+          <!-- <td>
+            <i class="fa fa-edit"></i>
+         
+          </td> -->
+          <!-- <td>
+            <i class="fa fa-trash" aria-hidden="true"  (click)="deletedata(e.id)"></i>
+           </td>
+          </tr>
+      </tbody>
+    </table> --> 
+    <!--       
+          <button class="btn btn-info float-right" (click)="getback()">Go Back</button> -->
+          <!-- <a class="btn btn-info float-right" routerLink="/employee">Back</a> -->
+      
+    <!-- <h1>Second type</h1> -->
+    <div class="container jumbotron ">
+      <table class="table table-striped table-dark" border="1">
+          <tbody>
+              <tr class="bg-info"> 
+                  <th> Id</th>
+                  <th> Name</th>
+                  <th> Email</th>
+                  <th> Mobile</th>
+                  <th> Designaton</th>
+                  <th> Uname</th>
+                  <th> Password</th>
+                  <th> Action</th>
+              </tr>
+          </tbody>
+              <tr *ngFor="let emp1 of em">
+                  <td>{{emp1.id}}</td>
+                  <td>{{emp1.ename}}</td>
+                  <td>{{emp1.email}}</td>
+                  <td>{{emp1.mobile}}</td>
+                  <td>{{emp1.designation}}</td>
+                  <td>{{emp1.username}}</td>
+                  <td>{{emp1.password}}</td>
+                  <td><a [routerLink]="['employeedetails',emp1.id]" >show details</a>
+                      <!--localhost....../employeedetails/2-->
+                      
+                      
+                      <a class="btn" [routerLink]="['update-emp']" [state]="emp1">
+                          <i class="fa fa-edit" style="color: white;"></i>
+                      </a>
+                  <a class="btn">
+                          <i class="fa fa-trash " (click)="deletedata(emp1.id)"></i>
+                      </a>
+                  </td>
+              </tr>
+         
+      </table>
+
+  </div>
+  <router-outlet></router-outlet>
